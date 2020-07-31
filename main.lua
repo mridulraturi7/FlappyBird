@@ -33,6 +33,12 @@ function love.resize(w, h)
     push:resize(w, h)
 end
 
+function love.keypressed(key)
+    if key == 'escape' then
+        love.event.quit()
+    end
+end
+
 function love.draw()
     push:start()
 
