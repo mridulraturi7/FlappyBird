@@ -24,6 +24,9 @@ function love.load()
     --nearest neighbour filter to avoid blurring.
     love.graphics.setDefaultFilter('nearest', 'nearest')
 
+    --set game window title
+    love.window.setTitle('Flappy Bird')
+
     push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
         vsync = true,
         fullscreen = false,
