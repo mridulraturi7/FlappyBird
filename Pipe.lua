@@ -30,5 +30,5 @@ function Pipe:update(dt)
 end
 
 function Pipe:render()
-    love.graphics.render(PIPE_IMAGE, math.floor(self.x + 0.5), math.floor(self.y))
+    love.graphics.draw(PIPE_IMAGE, math.floor(self.x + 0.5), math.floor(self.y))
 end
