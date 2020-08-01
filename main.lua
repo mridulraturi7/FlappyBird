@@ -67,6 +67,10 @@ function love.draw()
     push:start()
 
     --Parallax Scrolling
+    --In this, we draw our images shifted to the left by their looping point;
+    --eventually, they will revert back to 0 after a certain distance has elapsed,
+    --which will make it seem as if they are infinitely scrolling.
+    --Choosing a better looping point is key here so as to provide the illusion of looping. 
 
     --draw background image the negative looping point
     love.graphics.draw(backgorund, -backgroundScroll, 0)
