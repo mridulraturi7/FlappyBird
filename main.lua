@@ -139,7 +139,7 @@ function love.draw()
         pipe:render()
     end
 
-    --draw ground image(in front of background) at bootom of screen
+    --draw ground image(in front of background) at bottom of screen
     --at its negative looping point
     love.graphics.draw(ground, -groundScroll, VIRTUAL_HEIGHT - 16)
 
