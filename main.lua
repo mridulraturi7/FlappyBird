@@ -50,9 +50,10 @@ function love.resize(w, h)
 end
 
 function love.update(dt)
-    
+    --scroll background by preset speed * dt, looping back to 0 after the looping point
     backgroundScroll = (backgroundScroll + BACKGROUND_SCROLL_SPEED * dt) % BACKGROUND_LOOPING_POINT
 
+    --scroll ground by preset speed * dt, looping back to 0 after the screen width passes
     groundScroll = (groundScroll + GROUND_SCROLL_SPEED * dt) % VIRTUAL_WIDTH
 end
 
@@ -65,10 +66,13 @@ end
 function love.draw()
     push:start()
 
-    --draw background image at top left(0, 0)
+    --Parallax Scrolling
+
+    --draw background image the negative looping point
     love.graphics.draw(backgorund, -backgroundScroll, 0)
 
     --draw ground image(in front of background) at bootom of screen
+    --at its negative looping point
     love.graphics.draw(ground, -groundScroll, VIRTUAL_HEIGHT - 16)
 
     push:finish()
