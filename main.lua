@@ -8,6 +8,12 @@
 --import virtual resolution handling library
 push = require 'push'
 
+--classic OOP class library
+Class = require 'class'
+
+--import Bird class
+require 'Bird'
+
 --physical screen dimensions
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
@@ -30,6 +36,9 @@ local GROUND_SCROLL_SPEED = 60
 
 --point at which we shuld loop our background back to X = 0
 local BACKGROUND_LOOPING_POINT = 413
+
+--our Bird sprite (main character)
+local bird = Bird()
 
 function love.load()
     --nearest neighbour filter to avoid blurring.
@@ -78,6 +87,9 @@ function love.draw()
     --draw ground image(in front of background) at bootom of screen
     --at its negative looping point
     love.graphics.draw(ground, -groundScroll, VIRTUAL_HEIGHT - 16)
+
+    --render bird to the screen using its own render logic
+    bird:render();
 
     push:finish()
 end
