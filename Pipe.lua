@@ -8,3 +8,27 @@
     pipes themselves scroll through the game to give the illusion of
     player movement. 
 ]]
+
+Pipe = Class{}
+
+--since we only want the image loaded once, not per instantiation, define it externally
+local PIPE_IMAGE = love.graphics.newImage('pipe.png')
+
+local PIPE_SCROLL = -60
+
+function Pipe:init()
+    self.x = VIRTUAL_WIDTH
+    
+    --set the Y to a random value halfway below the screen
+    self.y = math.random(VIRTUAL_HEIGHT/4, VIRTUAL_HEIGHT - 10)
+
+    self.width = PIPE_IMAGE:getWidth()
+end
+
+function Pipe:update(dt)
+    self.x = self.x + PIPE_SCROLL * dt
+end
+
+function Pipe:render()
+    love.graphics.render(PIPE_IMAGE, math.floor(self.x + 0.5), math.floor(self.y))
+end
