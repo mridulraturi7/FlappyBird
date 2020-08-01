@@ -16,12 +16,20 @@ WINDOW_HEIGHT = 720
 VIRTUAL_WIDTH = 512
 VIRTUAL_HEIGHT = 288
 
---background and foreground images to render on screen
+--background image and starting scroll location (X - axis)
 local backgorund = love.graphics.newImage('background.png')
 local backgroundScroll = 0
 
+--ground image and starting scroll loaction (X - axis)
 local ground = love.graphics.newImage('ground.png')
 local groundScroll = 0
+
+--speed at which we should scroll our images, scaled by dt
+local BACKGROUND_SCROLL_SPEED = 30
+local GROUND_SCROLL_SPEED = 60
+
+--point at which we shuld loop our background back to X = 0
+local BACKGROUND_LOOPING_POINT = 413
 
 function love.load()
     --nearest neighbour filter to avoid blurring.
@@ -39,6 +47,13 @@ end
 
 function love.resize(w, h)
     push:resize(w, h)
+end
+
+function love.update(dt)
+    
+    backgroundScroll = (backgroundScroll + BACKGROUND_SCROLL_SPEED * dt) % BACKGROUND_LOOPING_POINT
+
+    groundScroll = (groundScroll + GROUND_SCROLL_SPEED * dt) % VIRTUAL_WIDTH
 end
 
 function love.keypressed(key)
