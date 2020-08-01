@@ -77,6 +77,8 @@ function love.update(dt)
     --scroll ground by preset speed * dt, looping back to 0 after the screen width passes
     groundScroll = (groundScroll + GROUND_SCROLL_SPEED * dt) % VIRTUAL_WIDTH
 
+    spawnTimer = spawnTimer + dt
+
     --spawn a new Pipe if the timer is past 2 seconds
     if spawnTimer > 2 then
         table.insert(pipes, Pipe())
@@ -144,7 +146,7 @@ function love.draw()
     love.graphics.draw(ground, -groundScroll, VIRTUAL_HEIGHT - 16)
 
     --render bird to the screen using its own render logic
-    bird:render();
+    bird:render()
 
     push:finish()
 end
