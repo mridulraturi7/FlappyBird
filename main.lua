@@ -18,7 +18,10 @@ VIRTUAL_HEIGHT = 288
 
 --background and foreground images to render on screen
 local backgorund = love.graphics.newImage('background.png')
+local backgroundScroll = 0
+
 local ground = love.graphics.newImage('ground.png')
+local groundScroll = 0
 
 function love.load()
     --nearest neighbour filter to avoid blurring.
@@ -48,10 +51,10 @@ function love.draw()
     push:start()
 
     --draw background image at top left(0, 0)
-    love.graphics.draw(backgorund, 0, 0)
+    love.graphics.draw(backgorund, -backgroundScroll, 0)
 
     --draw ground image(in front of background) at bootom of screen
-    love.graphics.draw(ground, 0, VIRTUAL_HEIGHT - 16)
+    love.graphics.draw(ground, -groundScroll, VIRTUAL_HEIGHT - 16)
 
     push:finish()
 end
