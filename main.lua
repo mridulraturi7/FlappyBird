@@ -114,7 +114,7 @@ function love.update(dt)
     --down after a table removal
     for k, pair in pairs(pipePairs) do
         if pair.remove then
-            teble.remove(pipePairs, k)
+            table.remove(pipePairs, k)
         end
     end
 
