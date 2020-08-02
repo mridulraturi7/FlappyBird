@@ -105,7 +105,7 @@ function love.update(dt)
     --update the bird for input and gravity
     bird:update(dt)
 
-    --for every pipe in the scene
+    --for every pipe pair in the scene
     for k, pair in pairs(pipePairs) do
         pair:update(dt)
     end
