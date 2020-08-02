@@ -1,7 +1,7 @@
 --[[
     Flappy Bird.
     It is a game developed by Dong Nguyen that went viral in 2013, utilizing a very simple
-    but effective gameplay mechanic of avoiding pipes indefinitely by just tapping the screen,
+    but effective gameplay mechanic of avoiding pipes indefinitely by just tapping the screen
     or using space key making the player's bird avatar flap its wings and move upwards slightly.
 ]]
 
@@ -44,6 +44,8 @@ local GROUND_SCROLL_SPEED = 60
 --point at which we shuld loop our background back to X = 0
 local BACKGROUND_LOOPING_POINT = 413
 
+local GROUND_LOOPING_POINT = 514
+
 --our Bird sprite (main character)
 local bird = Bird()
 
@@ -82,7 +84,7 @@ function love.update(dt)
     backgroundScroll = (backgroundScroll + BACKGROUND_SCROLL_SPEED * dt) % BACKGROUND_LOOPING_POINT
 
     --scroll ground by preset speed * dt, looping back to 0 after the screen width passes
-    groundScroll = (groundScroll + GROUND_SCROLL_SPEED * dt) % VIRTUAL_WIDTH
+    groundScroll = (groundScroll + GROUND_SCROLL_SPEED * dt) % GROUND_LOOPING_POINT
 
     spawnTimer = spawnTimer + dt
 
