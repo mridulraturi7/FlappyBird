@@ -20,6 +20,12 @@ require 'Pipe'
 --import PipePair class
 require 'PipePair'
 
+--all code related to game state and state machines
+require 'StateMachine'
+require 'states/BaseState'
+require 'states/PlayState'
+require 'states/TitleScreenState'
+
 
 --physical screen dimensions
 WINDOW_WIDTH = 1280
