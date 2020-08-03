@@ -23,6 +23,14 @@ function Bird:init()
     self.dy = 0
 end
 
+--[[
+    AABB collision that expects a pipe, which will have an X and Y and reference
+    global pipe width and height values. 
+]]
+function Bird:collides(pipe)
+    
+end
+
 function Bird:update(dt)
     --apply gravity to velocity
     self.dy = self.dy + GRAVITY * dt
