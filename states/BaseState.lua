@@ -7,3 +7,11 @@
     all have at least empty versions of these methods even if we don't
     define them ourselves in the actual classes.
 ]]
+
+BaseState = Class{}
+
+function BaseState:init() end
+function BaseState:enter() end
+function BaseState:exit() end
+function BaseState:update(dt) end
+function BaseState:render() end
