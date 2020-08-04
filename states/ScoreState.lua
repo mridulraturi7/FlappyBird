@@ -37,5 +37,13 @@ function ScoreState:render()
     love.graphics.setFont(mediumFont)
     love.graphics.printf('Score: ' .. tostring(self.score), 0, 60, VIRTUAL_WIDTH, 'center')
 
+    if self.score >= 20 then
+        love.graphics.draw(self.medals['gold'], 206, 88)
+    elseif self.score >= 10 then
+        love.graphics.draw(self.medals['silver'], 206, 88)
+    else 
+        love.graphics.draw(self.medals['bronze'], 206, 88)
+    end
+
     love.graphics.printf('Press Enter to Play Again!', 0, 236, VIRTUAL_WIDTH, 'center')
 end
