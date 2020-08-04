@@ -38,11 +38,11 @@ VIRTUAL_WIDTH = 512
 VIRTUAL_HEIGHT = 288
 
 --background image and starting scroll location (X - axis)
-local backgorund = love.graphics.newImage('background.png')
+local backgorund = love.graphics.newImage('images/background.png')
 local backgroundScroll = 0
 
 --ground image and starting scroll loaction (X - axis)
-local ground = love.graphics.newImage('ground.png')
+local ground = love.graphics.newImage('images/ground.png')
 local groundScroll = 0
 
 --speed at which we should scroll our images, scaled by dt
