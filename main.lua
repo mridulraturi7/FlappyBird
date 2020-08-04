@@ -85,6 +85,19 @@ function love.load()
     
     love.graphics.setFont(flappyFont)
 
+    --initialize our table of sounds
+    sounds = {
+        ['jump'] = love.audio.newSource('sounds/jump.wav', 'static'),
+        ['explosion'] = love.audio.newSource('sounds/explosion.wav', 'static'),
+        ['hurt'] = love.audio.newSource('sounds/hurt.wav', 'static'),
+        ['score'] = love.audio.newSource('sounds/score.wav', 'static'),
+        ['music'] = love.audio.newSource('sounds/marios_way.mp3', 'static')
+    }
+
+    --play theme music
+    sounds['music']:setLooping(true)
+    sounds['music']:play()
+
     push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
         vsync = true,
         fullscreen = false,
