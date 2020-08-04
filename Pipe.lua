@@ -12,7 +12,7 @@
 Pipe = Class{}
 
 --since we only want the image loaded once, not per instantiation, define it externally
-local PIPE_IMAGE = love.graphics.newImage('pipe.png')
+local PIPE_IMAGE = love.graphics.newImage('images/pipe.png')
 
 --speed at which the pipe should scroll right to left
 PIPE_SPEED = 60
