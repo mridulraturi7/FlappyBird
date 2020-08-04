@@ -19,6 +19,10 @@ function PlayState:init()
     self.pipePairs = {}
     self.timer = 0
 
+    --variable to take care of time interval between spawning of two pipe pairs
+    --first pipe pair to spawn after 2 seconds
+    self.interval = 2
+
     --variable to keep track of score
     self.score = 0
 
@@ -31,7 +35,7 @@ function PlayState:update(dt)
     self.timer = self.timer + dt
 
     --spawn a new pipe pair every second and a half
-    if self.timer > 2 then
+    if self.timer > self.interval then
         --modify the last Y coordinate we placed so pipe gaps aren't too far apart
         --no higher than 10 pixels below the top edge of the sceen,
         --and no lower then a gap length (90 pixels) from the bottom
@@ -44,6 +48,9 @@ function PlayState:update(dt)
 
         --reset timer
         self.timer = 0
+
+        --randomize time interval between spawning of two pipe pairs
+        self.interval = math.random(2, 4)  
     end
 
     --for every pair of pipes..
@@ -93,7 +100,7 @@ function PlayState:update(dt)
     if self.bird.y > VIRTUAL_HEIGHT - 15 then
         sounds['explosion']:play()
         sounds['hurt']:play()
-        
+
         gStateMachine:change('score', {
             score = self.score
         })
