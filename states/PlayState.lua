@@ -123,14 +123,7 @@ function PlayState:update(dt)
         gamePause = false
         sounds['music']:resume()
     end
---[[
-    APPROACH 1 FOR PAUSE STATE(NOT PERFECT)
-    --pause game logic
-    if love.keyboard.wasPressed('p') then
-        gStateMachine:change('pause')
-    end
-]]
-
+    
 end
 
 function PlayState:render()
