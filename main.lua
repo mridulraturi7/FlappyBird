@@ -74,6 +74,9 @@ function love.load()
     --nearest neighbour filter to avoid blurring.
     love.graphics.setDefaultFilter('nearest', 'nearest')
 
+    --seed the RNG
+    math.randomseed(os.time())
+
     --set game window title
     love.window.setTitle('Flappy Bird')
 
