@@ -107,7 +107,7 @@ function PlayState:update(dt)
     end
 
     --pause game logic
-    if love.keyboard.wasPressed('P') then
+    if love.keyboard.wasPressed('p') then
         gStateMachine:change('pause')
     end
 
