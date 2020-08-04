@@ -8,7 +8,8 @@
 PipePair = Class{}
 
 --size of the gap between pipes
-local GAP_HEIGHT = 90
+--local GAP_HEIGHT = 90 
+--Working on random gaps
 
 function PipePair:init(y)
     --initialize pipes past the end of the screen
@@ -17,11 +18,14 @@ function PipePair:init(y)
     --y value is for the topmost pipe;
     --gap is a vertical shift of the second lower pipe
     self.y = y
+
+    --gap variable to choose gap randomly
+    self.gap = math.random(70, 100)
     
     --instantiate two pipes that belong to this pair
     self.pipes = {
         ['upper'] = Pipe('top', self.y),
-        ['lower'] = Pipe('bottom', self.y + PIPE_HEIGHT + GAP_HEIGHT)
+        ['lower'] = Pipe('bottom', self.y + PIPE_HEIGHT + self.gap)
     }
 
     --whether this pipe is ready to be removed from the scene
