@@ -17,6 +17,9 @@ BIRD_HEIGHT = 24
 --flag to check if game is pause or not
 local gamePause = false
 
+--Pause Logo in case if game is paused
+local pauseLogo = love.graphics.newImage('images/pause.png')
+
 function PlayState:init()
     self.bird = Bird()
     self.pipePairs = {}
@@ -140,9 +143,11 @@ function PlayState:render()
 
     if gamePause == true then
         love.graphics.setFont(flappyFont)
-        love.graphics.printf('Paused', 0, 64, VIRTUAL_WIDTH, 'center')
+        love.graphics.printf('Paused', 0, 44, VIRTUAL_WIDTH, 'center')
 
         love.graphics.setFont(mediumFont)
-        love.graphics.printf('Press P to continue', 0, 100, VIRTUAL_WIDTH, 'center')
+        love.graphics.printf('Press P to continue', 0, 80, VIRTUAL_WIDTH, 'center')
+
+        love.graphics.draw(pauseLogo, 206, 110)
     end
 end
