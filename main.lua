@@ -141,7 +141,7 @@ function love.update(dt)
     love.keyboard.keysPressed = {}
 
     --reset mouse input table
-    love.keyboard.buttonsPressed = {}
+    love.mouse.buttonsPressed = {}
 end
 
 function love.keypressed(key)
@@ -176,7 +176,7 @@ end
 --[[
     Equivalent to our Keyboard function from before, but foe the mouse buttons.
 ]]
-function love.mouse.wassPressed(button)
+function love.mouse.wasPressed(button)
     return love.mouse.buttonsPressed[button]
 end
 
