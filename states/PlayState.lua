@@ -14,6 +14,7 @@ PIPE_HEIGHT = 288
 BIRD_WIDTH = 38
 BIRD_HEIGHT = 24
 
+--flag to check if game is pause or not
 local gamePause = false
 
 function PlayState:init()
@@ -136,4 +137,12 @@ function PlayState:render()
     love.graphics.print('Score: ' .. tostring(self.score), 8, 8)
 
     self.bird:render()
+
+    if gamePause == true then
+        love.graphics.setFont(flappyFont)
+        love.graphics.printf('Paused', 0, 64, VIRTUAL_WIDTH, 'center')
+
+        love.graphics.setFont(mediumFont)
+        love.graphics.printf('Press P to continue', 0, 100, VIRTUAL_WIDTH, 'center')
+    end
 end
