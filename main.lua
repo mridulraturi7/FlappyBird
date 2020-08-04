@@ -118,6 +118,9 @@ function love.load()
 
     --initialize input table
     love.keyboard.keysPressed = {}
+
+    --initialize mouse input table
+    love.mouse.buttonsPressed = {}
 end
 
 function love.resize(w, h)
@@ -136,6 +139,9 @@ function love.update(dt)
 
     --reset input table
     love.keyboard.keysPressed = {}
+
+    --reset mouse input table
+    love.keyboard.buttonsPressed = {}
 end
 
 function love.keypressed(key)
@@ -148,6 +154,14 @@ function love.keypressed(key)
 end
 
 --[[
+    LOVE2D callback function fired each time a mouse button is pressed; gives us the
+    X and Y coordinate of the mouse, as well as the button.
+]]
+function love.mousepressed(x, y, button)
+    love.mouse.buttonsPressed[button] = true
+end
+
+--[[
     New function used to check our global input table for keys we activated during
     this frame, looked up by their string value.
 ]]
@@ -157,6 +171,13 @@ function love.keyboard.wasPressed(key)
     else
         return false
     end
+end
+
+--[[
+    Equivalent to our Keyboard function from before, but foe the mouse buttons.
+]]
+function love.mouse.wassPressed(button)
+    return love.mouse.buttonsPressed[button]
 end
 
 function love.draw()
