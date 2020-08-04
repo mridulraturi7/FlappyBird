@@ -118,8 +118,10 @@ function PlayState:update(dt)
     --Logic for pausing the game
     if love.keyboard.wasPressed('p') and gamePause == false then
         gamePause = true
+        sounds['music']:pause()
     elseif love.keyboard.wasPressed('p') and gamePause == true then
         gamePause = false
+        sounds['music']:resume()
     end
 --[[
     APPROACH 1 FOR PAUSE STATE(NOT PERFECT)
