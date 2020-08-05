@@ -119,8 +119,11 @@ function PlayState:update(dt)
     if love.keyboard.wasPressed('p') and gamePause == false then
         gamePause = true
         sounds['music']:pause()
+        sounds['pause']:setLooping(true)
+        sounds['pause']:play()
     elseif love.keyboard.wasPressed('p') and gamePause == true then
         gamePause = false
+        sounds['pause']:pause()
         sounds['music']:resume()
     end
     

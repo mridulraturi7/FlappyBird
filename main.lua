@@ -97,7 +97,7 @@ function love.load()
         ['music'] = love.audio.newSource('sounds/marios_way.mp3', 'static'),
 
         --https://freesound.org/people/Mrthenoronha/sounds/509856/
-        ['pasue'] = love.audio.newSource('sounds/pause_music.wav', 'static')
+        ['pause'] = love.audio.newSource('sounds/pause_music.wav', 'static')
     }
 
     --play theme music
