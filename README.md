@@ -16,4 +16,4 @@ For Visual Studio Code, install following extensions:
 
 > Lua Debug
 
-LOVE2D Support
+> LOVE2D Support
