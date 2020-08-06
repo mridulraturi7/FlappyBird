@@ -11,3 +11,5 @@ For running this game you will need to install LOVE2D on your system.
 You will also need to setup Lua in your system.
 
 For Visual Studio Code, install following extensions:
+
+vscode-lua
