@@ -7,3 +7,5 @@ Flappy Bird is a game developed by Dong Nguyen that went viral in 2013, utilizin
 I have developed this game using LOVE2D gaming framework (version 0.10.2) with Lua as the scripting language.
 
 For running this game you will need to install LOVE2D on your system.
+
+You will also need to setup Lua in your system.
