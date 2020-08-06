@@ -12,7 +12,7 @@ You will also need to setup Lua in your system.
 
 For Visual Studio Code, install following extensions:
 
-vscode-lua
+> vscode-lua
 
 Lua Debug
 
