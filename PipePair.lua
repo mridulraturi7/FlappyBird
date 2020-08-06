@@ -7,10 +7,6 @@
 
 PipePair = Class{}
 
---size of the gap between pipes
---local GAP_HEIGHT = 90 
---Working on random gaps
-
 function PipePair:init(y)
     --initialize pipes past the end of the screen
     self.x = VIRTUAL_WIDTH + 32
