@@ -23,3 +23,5 @@ LOVE2D Support by Pixelbyte Studios extension allows us to run the love applicat
 External Libraries Used : 
 
 >push.lua - push library allows us to draw our game at a virtual resolution, regardless of however large our window is. Basically, it is used to provide a more retro look and feel to the game.
+
+>class.lua - class library allows us to represent anything in our game as code, rather than keeping track of many disparate variables and methods. Basically, it is used to utilize the concepts of Object Oriented Programming.
