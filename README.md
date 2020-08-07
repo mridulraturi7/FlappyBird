@@ -1,8 +1,12 @@
 # FlappyBird
 
+<p>&nbsp;</p>
+
 <div align = "center">
 <img src="images/FB Logo.png" width="160" />
 </div>
+
+<p>&nbsp;</p>
 
 This repository contains source code of the Flappy Bird game.
 
