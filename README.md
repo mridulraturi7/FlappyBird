@@ -24,9 +24,13 @@ I have developed this game using LOVE2D gaming framework (version 0.10.2) with L
 
 For running this game you will need to install LOVE2D on your system. [Click here to download LOVE2D](https://bitbucket.org/rude/love/downloads/).
 
+<p>&nbsp;</p>
+
 <div align = "center">
 <img src="images/lua_logo.png" width="140" />
 </div>
+
+<p>&nbsp;</p>
 
 You will also need to setup Lua in your system. [Download Lua from this link](https://sourceforge.net/projects/luabinaries/files/5.2.4/Tools%20Executables/lua-5.2.4_Win64_bin.zip/download?use_mirror=excellmedia)
 
