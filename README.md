@@ -3,7 +3,7 @@
 <p>&nbsp;</p>
 
 <div align = "center">
-<img src="images/FB Logo.png" width="180" height="120" />
+<img src="images/FB Logo.png" width="200" height="120" />
 </div>
 
 <p>&nbsp;</p>
