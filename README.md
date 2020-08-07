@@ -12,7 +12,7 @@ You will also need to setup Lua in your system. [Download Lua from this link](ht
 
 For Visual Studio Code, install the following extensions:
 
-> vscode-lua - [Click here to download]().
+> vscode-lua - [Click here to download](https://marketplace.visualstudio.com/items?itemName=trixnz.vscode-lua).
 
 > Lua Debug - [Click here to download]().
 
