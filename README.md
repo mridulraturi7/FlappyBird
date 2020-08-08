@@ -16,9 +16,9 @@ Scoring Criteria :
 
 1: Earn Gold Medal by scoring 20+ points.
 
-2: Earn Silver Medal by scoring 20+.
+2: Earn Silver Medal by scoring 10+ points.
 
-3: Earn Bronze Medal by scoring 10+.
+3: Earn Bronze Medal by scoring less than 10 points.
 
 I have developed this game using LOVE2D gaming framework (version 0.10.2) with Lua as the scripting language.
 
