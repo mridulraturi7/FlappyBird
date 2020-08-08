@@ -20,7 +20,7 @@ Scoring Criteria :
 
 3: Earn Bronze Medal by scoring less than 10 points.
 
-When the bird collides either with the obstacles which are pipes in this case or with the ground, the game gets over 
+When the bird collides either with the obstacles which are pipes in this case or with the ground, the game gets over.
 
 I have developed this game using LOVE2D gaming framework (version 0.10.2) with Lua as the scripting language.
 
