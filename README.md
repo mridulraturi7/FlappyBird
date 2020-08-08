@@ -14,6 +14,8 @@ Flappy Bird is a game developed by Dong Nguyen that went viral in 2013, utilizin
 
 Scoring Criteria :
 
+1: Earn Gold Medal by scoring 30+.
+
 I have developed this game using LOVE2D gaming framework (version 0.10.2) with Lua as the scripting language.
 
 <p>&nbsp;</p>
