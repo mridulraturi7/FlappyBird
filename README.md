@@ -16,7 +16,7 @@ Scoring Criteria :
 
 1: You will earn gold medal if you score 20+ points.
 
-2: Earn Silver Medal by scoring 10+ points.
+2: You will earn silver medal if you score 10+ points.
 
 3: Earn Bronze Medal by scoring less than 10 points.
 
