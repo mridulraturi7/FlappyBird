@@ -14,7 +14,7 @@ Flappy Bird is a game developed by Dong Nguyen that went viral in 2013, utilizin
 
 Scoring Criteria :
 
-1: Earn Gold Medal by scoring 20+ points.
+1: You will earn gold medal if you score 20+ points.
 
 2: Earn Silver Medal by scoring 10+ points.
 
