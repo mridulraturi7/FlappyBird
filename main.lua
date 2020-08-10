@@ -17,7 +17,7 @@ push = require 'push'
 --[[
     class is a library that will allow us to represent anything in
     our game as code, rather than keeping track of many disparate 
-    variables and methods
+    variables and methods.
 ]]
 Class = require 'class'
 
