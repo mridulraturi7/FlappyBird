@@ -96,6 +96,7 @@ function love.load()
     flappyFont = love.graphics.newFont('fonts/flappy.ttf', 28)
     hugeFont = love.graphics.newFont('fonts/flappy.ttf', 56)
     
+    --set the font to flappyFont
     love.graphics.setFont(flappyFont)
 
     --initialize our table of sounds
