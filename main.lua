@@ -5,7 +5,6 @@
     or using space key making the player's bird avatar flap its wings and move upwards slightly.
 ]]
 
---
 --[[
     push is a library that allows us to draw our game at a
     virtual resolution, instead of however large our window is;
