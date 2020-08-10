@@ -6,6 +6,11 @@
 ]]
 
 --import virtual resolution handling library
+--[[
+    push is a library that allows us to draw our game at a
+    virtual resolution, instead of however large our window is;
+    It is used to provide a more retro look and feel to the game.
+]]
 push = require 'push'
 
 --classic OOP class library
