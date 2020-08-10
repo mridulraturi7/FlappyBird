@@ -10,7 +10,7 @@
     push is a library that allows us to draw our game at a
     virtual resolution, instead of however large our window is;
     It is used to provide a more retro look and feel to the game.
-    import virtual resolution handling library (push.lua)
+    import virtual resolution handling library (push.lua).
 ]]
 push = require 'push'
 
