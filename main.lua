@@ -107,7 +107,7 @@ function love.load()
         ['score'] = love.audio.newSource('sounds/score.wav', 'static'),
         ['music'] = love.audio.newSource('sounds/marios_way.mp3', 'static'),
 
-        --https://freesound.org/people/Mrthenoronha/sounds/509856/
+        --audio source - https://freesound.org/people/Mrthenoronha/sounds/509856/
         ['pause'] = love.audio.newSource('sounds/pause_music.wav', 'static')
     }
 
