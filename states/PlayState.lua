@@ -125,6 +125,7 @@ function PlayState:update(dt)
         sounds['pause']:play()
     elseif love.keyboard.wasPressed('p') and gamePause == true then
         gamePause = false
+        --pause the pause music
         sounds['pause']:pause()
         sounds['music']:resume()
     end
