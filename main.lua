@@ -128,6 +128,7 @@ function love.load()
         ['play'] = function() return PlayState() end,
         ['score'] = function() return ScoreState() end
     }
+    --by default set the state to tile state when the game begins
     gStateMachine:change('title')
 
     --initialize input table
