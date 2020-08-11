@@ -127,7 +127,7 @@ function PlayState:update(dt)
         gamePause = false
         --pause the pause music
         sounds['pause']:pause()
-        --resume the background music
+        --resume the background theme music
         sounds['music']:resume()
     end
     
