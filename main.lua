@@ -138,6 +138,9 @@ function love.load()
     love.mouse.buttonsPressed = {}
 end
 
+--[[
+    resize funtion is called whenever we resize the screen
+]]
 function love.resize(w, h)
     push:resize(w, h)
 end
