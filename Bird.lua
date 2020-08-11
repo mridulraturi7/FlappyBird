@@ -56,6 +56,6 @@ function Bird:update(dt)
 end
 
 function Bird:render()
-    --draw the bird image on the screen at the updated coordinates.
+    --draw the bird image on the screen at the updated coordinates x and y
     love.graphics.draw(self.image, self.x, self.y)
 end
