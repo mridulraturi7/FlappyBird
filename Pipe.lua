@@ -37,6 +37,7 @@ function Pipe:update(dt)
 end
 
 function Pipe:render()
+    --draw pipe as per the orientation
     love.graphics.draw(PIPE_IMAGE, self.x,
         (self.orientation == 'top' and self.y + PIPE_HEIGHT or self.y),
         0, -- Image Rotation
