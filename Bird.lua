@@ -56,5 +56,6 @@ function Bird:update(dt)
 end
 
 function Bird:render()
+    --draw the bird image on the screen
     love.graphics.draw(self.image, self.x, self.y)
 end
