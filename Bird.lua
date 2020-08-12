@@ -10,6 +10,7 @@ Bird = Class{}
 
 --set the gravity 
 --taking 20 after testing other values
+--you can take any other value for gravity
 local GRAVITY = 20
 
 function Bird:init()
