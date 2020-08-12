@@ -39,7 +39,7 @@ function ScoreState:render()
     love.graphics.printf('Score: ' .. tostring(self.score), 0, 60, VIRTUAL_WIDTH, 'center')
 
     --display medal as per the score of the player
-    --GOLD MEDAL -> 20+ Points
+    --GOLD MEDAL -> 20 OR More than 20 Points
     --SILVER MEDAL -> 10+ Points
     --BRONZE MEDAL -> Less than 10 Points
     if self.score >= 20 then
