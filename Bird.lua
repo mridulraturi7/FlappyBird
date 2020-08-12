@@ -8,6 +8,7 @@
 
 Bird = Class{}
 
+--setthe gravity 
 local GRAVITY = 20
 
 function Bird:init()
