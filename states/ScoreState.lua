@@ -38,7 +38,7 @@ function ScoreState:render()
     love.graphics.setFont(mediumFont)
     love.graphics.printf('Score: ' .. tostring(self.score), 0, 60, VIRTUAL_WIDTH, 'center')
 
-    --display medal as per the score
+    --display medal as per the score of the player
     if self.score >= 20 then
         love.graphics.draw(self.medals['gold'], 206, 88)
     elseif self.score >= 10 then
