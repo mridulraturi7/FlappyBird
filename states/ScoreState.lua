@@ -41,6 +41,7 @@ function ScoreState:render()
     --display medal as per the score of the player
     --GOLD MEDAL -> 20+ Points
     --SILVER MEDAL -> 10+ Points
+    --BRONZE MEDAL -> Less than 10 Points
     if self.score >= 20 then
         love.graphics.draw(self.medals['gold'], 206, 88)
     elseif self.score >= 10 then
