@@ -15,7 +15,7 @@ ScoreState = Class{__includes = BaseState}
 function ScoreState:enter(params)
     self.score = params.score
 
-    --table medal images based on score
+    --initialize medal table with medal images based on score
     self.medals = {
         ['gold'] = love.graphics.newImage('images/gold.png'),
         ['silver'] = love.graphics.newImage('images/silver.png'),
