@@ -23,8 +23,6 @@ local pauseLogo = love.graphics.newImage('images/pause.png')
 function PlayState:init()
     self.bird = Bird()
     self.pipePairs = {}
-
-    --countdown timer variable
     self.timer = 0
 
     --variable to take care of time interval between spawning of two pipe pairs
