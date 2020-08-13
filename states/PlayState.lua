@@ -110,6 +110,7 @@ function PlayState:update(dt)
             sounds['explosion']:play()
             sounds['hurt']:play()
 
+            --transition to score state passing the player score as parameter
             gStateMachine:change('score', {
                 score = self.score
             })
