@@ -39,8 +39,9 @@ end
 function Pipe:render()
     --draw pipe (upper and lower) as per the orientation
     love.graphics.draw(PIPE_IMAGE, self.x,
-        (self.orientation == 'top' and self.y + PIPE_HEIGHT or self.y),
-        0, -- Image Rotation
-        1, -- Scale in X axis
-        self.orientation == 'top' and -1 or 1) -- Scale in Y axis, -1 flips the image
+        (
+            self.orientation == 'top' and self.y + PIPE_HEIGHT or self.y),
+            0, -- Image Rotation
+            1, -- Scale in X axis
+            self.orientation == 'top' and -1 or 1) -- Scale in Y axis, -1 flips the image
 end
